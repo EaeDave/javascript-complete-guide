@@ -17,3 +17,7 @@
 ## How Is JavasScript Executed?
 
 ![how-is-javascript-executed-diagram.png](assets/how-is-javascript-executed-diagram.png)
+
+## Dynamic? Weakly Typed?
+
+![dynamic-weakly-typed.png](assets/dynamic-weakly-typed-diagram.png)
