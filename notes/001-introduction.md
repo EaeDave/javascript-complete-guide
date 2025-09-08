@@ -13,3 +13,7 @@
 ## How Do Webpages Work?
 
 ![how-do-web-pages-work-diagram.png](assets/how-do-webpages-work-diagram.png)
+
+## How Is JavasScript Executed?
+
+![how-is-javascript-executed-diagram.png](assets/how-is-javascript-executed-diagram.png)
