@@ -21,3 +21,15 @@
 ## Dynamic? Weakly Typed?
 
 ![dynamic-weakly-typed.png](assets/dynamic-weakly-typed-diagram.png)
+
+## JavasScript Runs On A Host Environment
+
+> **Browser-side**
+> JavaScript **was invented to create more dynamic websites** by executing in the browser!
+> JavaScript **can manipulate the HTML  code, CSS, send background Http requests** & much more.
+> JavaScript **CAN'T access the local filesystem,** interact with the operating system etc. This is **Security.**
+
+> **Server-side**
+> Google's JavaScript Engine (***V8***) was extracted to run JavaScript anywhere (called ***"Node.js"***).
+> *Node.js* **can be executed on any machine** and is therefore often used to **build web backends** (server-side JavaScript).
+> ***Node.js*** **CAN access the local filesystem,** interact with the operating system etc. It **CAN'T manipulate HTML or CSS.**
