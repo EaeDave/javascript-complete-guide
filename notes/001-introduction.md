@@ -33,3 +33,7 @@
 > Google's JavaScript Engine (***V8***) was extracted to run JavaScript anywhere (called ***"Node.js"***).
 > *Node.js* **can be executed on any machine** and is therefore often used to **build web backends** (server-side JavaScript).
 > ***Node.js*** **CAN access the local filesystem,** interact with the operating system etc. It **CAN'T manipulate HTML or CSS.**
+
+## What's In This Course?
+
+![whats-in-this-course-diagram.png](assets/whats-in-this-course-diagram.png)
