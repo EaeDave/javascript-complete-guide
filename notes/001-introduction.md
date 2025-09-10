@@ -59,3 +59,21 @@
 > *Node.JS* uses the same Syntax **(You easily learn Node.js after learning JS in general).**
 
 > It's more fun to learn it with a nice UI!
+
+## A Brief Overview Of The JavaScript History
+
+### Timeline:
+
+> 1995 - *Netscape* Introduces "LiveScript" / "JavaScript".
+
+> 1996 - *Microsoft* releases its own version for *IE*.
+
+> Late 1996 - JavaScript submitted to *ECMA* International to start standardization.
+
+> 1997-2005 - Standardization efforts, *Microsoft* didn't really join and support the standardized JS version though.
+
+> 2006-2011 - Huge progress in JavaScript ecosystem, *Microsoft* eventually joined forces.
+
+### JavaScript & ECMAScript
+
+![javascript-and-ecmascript-diagram.png](assets/javascript-and-ecmascript-diagram.png)
