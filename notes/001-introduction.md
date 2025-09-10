@@ -41,3 +41,21 @@
 ## How To Get The Most Out Of The Course
 
 ![how-to-get-the-most-out-of-the-course-diagram.png](assets/how-to-get-the-most-out-of-the-course-diagram.png)
+
+## JavaScript and Java
+
+![javascript-and-java-diagram.png](assets/javascript-and-java-diagram.png)
+
+### Client-side (**Browser**) vs Server-side (***NodeJS***)
+
+![client-side-vs-server-side-diagram.png](assets/client-side-vs-server-side-diagram.png)
+
+### Why Browser-side First?
+
+> It's JavaScript's Origin.
+
+> No Alternatives to JavaScript in the Browser.
+
+> *Node.JS* uses the same Syntax **(You easily learn Node.js after learning JS in general).**
+
+> It's more fun to learn it with a nice UI!
