@@ -77,3 +77,15 @@
 ### JavaScript & ECMAScript
 
 ![javascript-and-ecmascript-diagram.png](assets/javascript-and-ecmascript-diagram.png)
+
+## Setting Up a Development Environment
+
+> Writing code in the system text editor is too cumbersome.
+
+> We need a better code editor.
+> **Suggested one:**
+> [Visual Studio Code](https://code.visualstudio.com/) + Core Extensions & Configuration.
+
+> We need an environment where we can test our webpages/code.
+> **Suggested one:**
+> [Google Chrome](https://www.google.com/intl/pt-BR/chrome/) + Browser Developer Tools.
