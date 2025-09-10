@@ -37,3 +37,7 @@
 ## What's In This Course?
 
 ![whats-in-this-course-diagram.png](assets/whats-in-this-course-diagram.png)
+
+## How To Get The Most Out Of The Course
+
+![how-to-get-the-most-out-of-the-course-diagram.png](assets/how-to-get-the-most-out-of-the-course-diagram.png)
