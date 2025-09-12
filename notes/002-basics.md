@@ -41,3 +41,7 @@
 - **Constants can't be reassign like variables.**
 - Values must not change!
 - Typically **use as often as possible** (more restrict, less errors).
+
+## Variable Naming
+
+![variable-naming-diagram.png](assets/basics/variable-naming-diagram.png)
