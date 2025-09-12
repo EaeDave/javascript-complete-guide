@@ -45,3 +45,7 @@
 ## Variable Naming
 
 ![variable-naming-diagram.png](assets/basics/variable-naming-diagram.png)
+
+## Operators
+
+![basic-operators-diagram.png](assets/basics/basic-operatos-diagram.png)
