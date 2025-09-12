@@ -4,4 +4,6 @@ currentResult = 0; // then, initialize a value like this.
 currentResult = currentResult + 10; // adding the last result plus the new result.
 currentResult += 10; // other way to do it.
 
-outputResult(currentResult, '');
+let calculationDescription = '10 + 10';
+
+outputResult(currentResult, calculationDescription);
