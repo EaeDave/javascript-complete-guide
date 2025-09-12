@@ -7,5 +7,13 @@ currentResult += 10; // other way to do it.
 
 // defaultResult = currentResult;  // constants can't be reassign.
 let calculationDescription = '10 + 10';
+calculationDescription = '"10 + 10"'; // showing double quotes using single quotes to define the string.
+// template literals
+calculationDescription = `Showing a data of an variable
 
-outputResult(currentResult, calculationDescription);
+
+${currentResult}`; // using backtick to interact javascript data to a string.
+
+let errorMessage = 'An error \n' + 'occurred!';
+
+outputResult(currentResult, errorMessage);
