@@ -55,3 +55,7 @@
 > **Numbers:** 2, -3, 22.956 Important for calculations and code where you need to "work with a number".
 
 > **Strings (Text):** 'Hi', "Hi", \`Hi` Important for outputting results, gathering input
+
+## Functions
+
+![functions-diagram.png](assets/basics/functions-diagram.png)
