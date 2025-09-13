@@ -10,7 +10,8 @@ currentResult += 10; // other way to do it.
 function add(num1, num2) {
   // inside the braces {} there are the function's body.
   const result = num1 + num2; // variable that only exists in the function scope.
-  alert(`The result is ${result}`);
+  // alert(`The result is ${result}`);
+  return result;
 }
 
 // defaultResult = currentResult;  // constants can't be reassign.
@@ -24,5 +25,10 @@ ${currentResult}`; // using backtick to interact javascript data to a string.
 
 let errorMessage = 'An error \n' + 'occurred!';
 
-outputResult(currentResult, errorMessage);
-add(4, 6); // calling the function using arguments 4 and 6.
+const firstSum = add(10, 10); // add returns a value.
+const secondSum = add(2, 3); // add returns a value.
+alert(firstSum); // showing results.
+alert(secondSum);
+// add(4, 6); // calling the function using arguments 4 and 6.
+
+outputResult(currentResult, secondSum);
