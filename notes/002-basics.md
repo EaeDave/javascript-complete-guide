@@ -95,3 +95,107 @@ We only declare another variable inside of the function. But since variables in 
 It creates a new variable on a different scope - this variables does not overwrite or remove the global variable by the way - both co-exist.
 
 When referring to userName inside of the greetUser function we now always refer to the local, shadowed variable. Only if no such local variable existed, JavaScript would fall back to the global variable.
+
+## "Indirect" vs "Direct" Function Execution - Summary
+
+### Two Ways of Using a Function in JavaScript
+
+It can be confusing to see that there seem to be two ways of executing a function:
+
+```js
+function add() {
+  something = someNum + someOtherNum;
+}
+```
+
+- Calling the function directly:
+
+```js
+add()
+```
+
+- Referencing the function (without executing):
+
+```js
+add
+```
+
+---
+
+### Calling a Function
+
+In general, you call a function that you defined by using its **name** (e.g. `add`) and adding **parentheses** (with any parameters the function might need – or empty parentheses if no parameters are required like in the above example).
+
+```js
+add()
+```
+
+This is how you **execute a function from your code**.  
+Whenever JavaScript encounters this statement, it goes ahead and runs the code in the function. **Period!**
+
+---
+
+### When You Don’t Want to Call It Immediately
+
+Sometimes however, you don't want to execute the function immediately.  
+You rather want to **tell JavaScript** that it should execute a certain function at some point in the future (e.g. when some event occurs).
+
+That's when you don't directly call the function but instead just **provide JavaScript with the name of the function**.
+
+Example:
+
+```js
+someButton.addEventListener('click', add);
+```
+
+This snippet would tell JavaScript:  
+> "Hey, when the button is clicked, go ahead and execute `add`."
+
+---
+
+### Common Mistake: Adding Parentheses in `addEventListener`
+
+```js
+someButton.addEventListener('click', add());
+```
+
+This would be **wrong**.
+
+**Why?**
+
+Because JavaScript would encounter that line when it parses/executes your script and:
+
+1. Register the event listener.  
+2. **Immediately execute** `add` – because you added parentheses.  
+
+That means (see above):  
+> "Please execute that function!"
+
+Remember:  
+
+- `add` → reference to the function (not executed).  
+- `add()` → executes the function immediately.
+
+---
+
+### Just Writing the Function Name Does Nothing
+
+Example:
+
+```js
+let someVar = 5;
+add
+alert('Do something else...');
+```
+
+**Why?**
+
+Because you just throw the **name of the function** in there but you don’t give any other information to JavaScript.  
+
+It basically doesn’t know what to do with that name:  
+
+> "Should I run that when a click occurs? After a certain amount of time? I don’t know..."  
+
+Hence, JavaScript kind of **ignores** this statement.
+
+---
