@@ -24,7 +24,7 @@ alert(firstSum); // showing results.
 alert(secondSum);
 // add(4, 6); // calling the function using arguments 4 and 6.
 
-outputResult(currentResult, secondSum);
+// outputResult(currentResult, secondSum);
 
 // we can declare a function after call it (hoisting).
 //       add is the function's name.
