@@ -199,3 +199,7 @@ It basically doesn’t know what to do with that name:
 Hence, JavaScript kind of **ignores** this statement.
 
 ---
+
+## More operators!
+
+![more-operators-diagram.png](assets/basics/more-operatores-diagram.png)
