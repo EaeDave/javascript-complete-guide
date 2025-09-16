@@ -203,3 +203,9 @@ Hence, JavaScript kind of **ignores** this statement.
 ## More operators!
 
 ![more-operators-diagram.png](assets/basics/more-operatores-diagram.png)
+
+---
+
+## More Core Data Types
+
+![more-core-data-types-diagram.png](assets/basics/more-core-data-types-diagram.png)
