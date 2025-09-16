@@ -5,12 +5,41 @@ function getUserInput() {
   return parseInt(userInput.value);
 }
 
+function createAndWriteOutput(operator, resultBeforeCalc, calcNumber) {
+  const calcDescription = `${resultBeforeCalc} ${operator} ${calcNumber}`;
+  outputResult(currentResult, calcDescription);
+}
+
 function add() {
   const enteredNumber = getUserInput();
-  const calcDescription = `${currentResult} + ${enteredNumber}`;
+  const initialResult = currentResult;
   currentResult = currentResult + enteredNumber; // converts text to integer.
-  outputResult(currentResult, calcDescription);
+  createAndWriteOutput('+', initialResult, enteredNumber);
+}
+
+function subtract() {
+  const enteredNumber = getUserInput();
+  const initialResult = currentResult;
+  currentResult = currentResult - enteredNumber;
+  createAndWriteOutput('-', initialResult, enteredNumber);
+}
+
+function multiply() {
+  const enteredNumber = getUserInput();
+  const initialResult = currentResult;
+  currentResult = currentResult * enteredNumber;
+  createAndWriteOutput('*', initialResult, enteredNumber);
+}
+
+function divide() {
+  const enteredNumber = getUserInput();
+  const initialResult = currentResult;
+  currentResult = currentResult / enteredNumber;
+  createAndWriteOutput('/', initialResult, enteredNumber);
 }
 
 // event to identify when the btn was clicked, so do something.
 addBtn.addEventListener('click', add);
+subtractBtn.addEventListener('click', subtract);
+multiplyBtn.addEventListener('click', multiply);
+divideBtn.addEventListener('click', divide);
