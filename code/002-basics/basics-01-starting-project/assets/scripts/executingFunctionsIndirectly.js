@@ -1,5 +1,6 @@
 const defaultResult = 0;
 let currentResult = defaultResult;
+let logEntries = []; // initializing an array.
 
 function getUserInput() {
   return parseInt(userInput.value);
@@ -25,6 +26,8 @@ function add() {
   const initialResult = currentResult;
   currentResult += enteredNumber; // converts text to integer.
   createAndWriteOutput('+', initialResult, enteredNumber);
+  logEntries.push(enteredNumber);
+  console.log(logEntries[0]); // getting the first element of the array.
 }
 
 function subtract() {
