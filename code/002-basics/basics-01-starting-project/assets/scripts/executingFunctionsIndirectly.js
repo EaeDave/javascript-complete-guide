@@ -35,6 +35,7 @@ function add() {
   logEntries.push(logEntry);
   // console.log(logEntries[0]); // getting the first element of the array.
   console.log(logEntries);
+  console.log(logEntry.operation); // accessing property from logEntry.
 }
 
 function subtract() {
