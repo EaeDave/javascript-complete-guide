@@ -26,8 +26,15 @@ function add() {
   const initialResult = currentResult;
   currentResult += enteredNumber; // converts text to integer.
   createAndWriteOutput('+', initialResult, enteredNumber);
-  logEntries.push(enteredNumber);
-  console.log(logEntries[0]); // getting the first element of the array.
+  const logEntry = {
+    operation: 'ADD',
+    prevResult: initialResult,
+    number: enteredNumber,
+    result: currentResult,
+  }; // initializing an object.
+  logEntries.push(logEntry);
+  // console.log(logEntries[0]); // getting the first element of the array.
+  console.log(logEntries);
 }
 
 function subtract() {
