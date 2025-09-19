@@ -213,3 +213,7 @@ Hence, JavaScript kind of **ignores** this statement.
 ## undefined, null & NaN
 
 ![null-undefined-nan-diagram.png](assets/basics/null-undefined-nan-diagram.png)
+
+## Importing JavaScript Efficiently
+
+![timeline-summary-importing-js-diagram.png](assets/basics/time-line-summary-importing-js-diagram.png)
