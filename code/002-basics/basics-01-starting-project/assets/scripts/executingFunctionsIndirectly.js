@@ -21,16 +21,17 @@ function createAndWriteOutput(operator, resultBeforeCalc, calcNumber) {
   outputResult(currentResult, calcDescription);
 }
 
-function add() {
-  const enteredNumber = getUserInput();
-  const initialResult = currentResult;
-  currentResult += enteredNumber; // converts text to integer.
-  createAndWriteOutput('+', initialResult, enteredNumber);
+function writeToLog(
+  operationIdentifier,
+  prevResult,
+  operationNumber,
+  newResult
+) {
   const logEntry = {
-    operation: 'ADD',
-    prevResult: initialResult,
-    number: enteredNumber,
-    result: currentResult,
+    operation: operationIdentifier,
+    prevResult: prevResult,
+    number: operationNumber,
+    result: newResult,
   }; // initializing an object.
   logEntries.push(logEntry);
   // console.log(logEntries[0]); // getting the first element of the array.
@@ -38,11 +39,20 @@ function add() {
   console.log(logEntry.operation); // accessing property from logEntry.
 }
 
+function add() {
+  const enteredNumber = getUserInput();
+  const initialResult = currentResult;
+  currentResult += enteredNumber; // converts text to integer.
+  createAndWriteOutput('+', initialResult, enteredNumber);
+  writeToLog('ADD', initialResult, enteredNumber, currentResult);
+}
+
 function subtract() {
   const enteredNumber = getUserInput();
   const initialResult = currentResult;
   currentResult -= enteredNumber;
   createAndWriteOutput('-', initialResult, enteredNumber);
+  writeToLog('SUBTRACT', initialResult, enteredNumber, currentResult);
 }
 
 function multiply() {
@@ -52,6 +62,7 @@ function multiply() {
   // currentResult++; = currentResult = currentResult + 1;
   // currentResult --; = currentResult = currentResult - 1;
   createAndWriteOutput('*', initialResult, enteredNumber);
+  writeToLog('MULTIPLY', initialResult, enteredNumber, currentResult);
 }
 
 function divide() {
@@ -59,6 +70,7 @@ function divide() {
   const initialResult = currentResult;
   currentResult /= enteredNumber;
   createAndWriteOutput('/', initialResult, enteredNumber);
+  writeToLog('DIVIDE', initialResult, enteredNumber, currentResult);
 }
 
 // event to identify when the btn was clicked, so do something.
