@@ -11,9 +11,13 @@
 > Explore extensions & settings
 
 > **Find Help**
-
-> **Debug Your Code**
 > Use MDN!
 > Learn how to google (seriously!)
 > Ask proper questions, help others
 > Trial & Error
+
+> **Debug Your Code**
+> Read and utilize error messages
+> Use console.log() to gain insights into your code (flow)
+> Use the *(Chrome)* debugging tools
+> Use your IDEs debugging capabilities
