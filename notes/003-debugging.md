@@ -12,4 +12,8 @@
 
 > **Find Help**
 
-> Debug Your Code
+> **Debug Your Code**
+> Use MDN!
+> Learn how to google (seriously!)
+> Ask proper questions, help others
+> Trial & Error
