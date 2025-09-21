@@ -209,3 +209,11 @@ Hence, JavaScript kind of **ignores** this statement.
 ## More Core Data Types
 
 ![more-core-data-types-diagram.png](assets/basics/more-core-data-types-diagram.png)
+
+## undefined, null & NaN
+
+![null-undefined-nan-diagram.png](assets/basics/null-undefined-nan-diagram.png)
+
+## Importing JavaScript Efficiently
+
+![timeline-summary-importing-js-diagram.png](assets/basics/time-line-summary-importing-js-diagram.png)
