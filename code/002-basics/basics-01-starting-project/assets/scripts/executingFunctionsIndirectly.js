@@ -42,6 +42,8 @@ function writeToLog(
 function add() {
   const enteredNumber = getUserInput();
   const initialResult = currentResult;
+  console.log(enteredNumber, currentResult); // using console.log() to analyze our inputs code
+  console.log(typeof enteredNumber, typeof currentResult); // using console.log() to analyze our inputs code
   currentResult += enteredNumber; // converts text to integer.
   createAndWriteOutput('+', initialResult, enteredNumber);
   writeToLog('ADD', initialResult, enteredNumber, currentResult);
