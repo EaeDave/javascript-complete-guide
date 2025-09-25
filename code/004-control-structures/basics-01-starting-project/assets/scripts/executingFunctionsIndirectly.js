@@ -48,9 +48,15 @@ function calculateResult(calculationType) {
   if (calculationType === 'ADD') {
     currentResult += enteredNumber; // converts text to integer.
     mathOperator = '+';
-  } else {
+  } else if (calculationType === 'SUBTRACT') {
     currentResult -= enteredNumber;
     mathOperator = '-';
+  } else if (calculationType === 'MULTIPLY') {
+    currentResult *= enteredNumber;
+    mathOperator = '*';
+  } else {
+    currentResult /= enteredNumber;
+    mathOperator = '/';
   }
 
   createAndWriteOutput(mathOperator, initialResult, enteredNumber);
@@ -66,21 +72,11 @@ function subtract() {
 }
 
 function multiply() {
-  const enteredNumber = getUserInput();
-  const initialResult = currentResult;
-  currentResult *= enteredNumber;
-  // currentResult++; = currentResult = currentResult + 1;
-  // currentResult --; = currentResult = currentResult - 1;
-  createAndWriteOutput('*', initialResult, enteredNumber);
-  writeToLog('MULTIPLY', initialResult, enteredNumber, currentResult);
+  calculateResult('MULTIPLY');
 }
 
 function divide() {
-  const enteredNumber = getUserInput();
-  const initialResult = currentResult;
-  currentResult /= enteredNumber;
-  createAndWriteOutput('/', initialResult, enteredNumber);
-  writeToLog('DIVIDE', initialResult, enteredNumber, currentResult);
+  calculateResult('DIVIDE');
 }
 
 // event to identify when the btn was clicked, so do something.
