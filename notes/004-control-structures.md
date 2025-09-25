@@ -9,3 +9,11 @@
 > Loops in JavaScript
 
 > Error Handling
+
+## Conditional Code Execution
+
+![conditional-code-execution-diagram.png](./assets/conditional-code/conditional-code-execution-diagram.png)
+
+## Boolean Operators
+
+![boolean-operators-diagram.png](./assets/conditional-code/boolean-operators-diagram.png)
