@@ -24,3 +24,7 @@
 ## Combining Conditions
 
 ![combining-conditions-diagram.png](assets/conditional-code/combining-conditions-diagram.png)
+
+## Operator precedence
+
+[Operator precedence - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence)
