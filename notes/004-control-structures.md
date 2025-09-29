@@ -17,3 +17,6 @@
 ## Boolean Operators
 
 ![boolean-operators-diagram.png](./assets/conditional-code/boolean-operators-diagram.png)
+
+## Beware of Objects & Arrays in Comparisons!
+![object-arrays-comparison-diagram.png](assets/conditional-code/object-arrays-comparison-diagram.png)
