@@ -20,3 +20,7 @@
 
 ## Beware of Objects & Arrays in Comparisons!
 ![object-arrays-comparison-diagram.png](assets/conditional-code/object-arrays-comparison-diagram.png)
+
+## Combining Conditions
+
+![combining-conditions-diagram.png](assets/conditional-code/combining-conditions-diagram.png)

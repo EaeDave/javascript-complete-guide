@@ -40,6 +40,16 @@ function writeToLog(
 }
 
 function calculateResult(calculationType) {
+  if (
+    calculationType !== 'ADD' &&
+    calculationType !== 'SUBTRACT' &&
+    calculationType !== 'MULTIPLY' &&
+    'DIVIDE'
+  ) {
+    console.log('Incorrect value to calculationType');
+    return; // stops code here
+  }
+
   const enteredNumber = getUserInput();
   const initialResult = currentResult;
   let mathOperator;
