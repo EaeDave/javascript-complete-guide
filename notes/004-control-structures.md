@@ -28,3 +28,9 @@
 ## Operator precedence
 
 [Operator precedence - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence)
+
+## Falsy and Truthy Values
+
+![falsy-and-truthy-values-diagram.png](assets/conditional-code/falsy-and-truthy-values-diagram.png)
+
+![falsy-and-truthy-values-example-diagram.png](assets/conditional-code/falsy-and-truthy-values-example-diagram.png)

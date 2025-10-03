@@ -1,3 +1,18 @@
+// Get DOM elements
+const userInput = document.getElementById('input-number');
+const addBtn = document.getElementById('btn-add');
+const subtractBtn = document.getElementById('btn-subtract');
+const multiplyBtn = document.getElementById('btn-multiply');
+const divideBtn = document.getElementById('btn-divide');
+
+const currentResultOutput = document.getElementById('current-result');
+const currentCalculationOutput = document.getElementById('current-calculation');
+
+function outputResult(result, text) {
+  currentResultOutput.textContent = result;
+  currentCalculationOutput.textContent = text;
+}
+
 const defaultResult = 0;
 let currentResult = defaultResult;
 let logEntries = []; // initializing an array.
@@ -40,17 +55,18 @@ function writeToLog(
 }
 
 function calculateResult(calculationType) {
+  const enteredNumber = getUserInput();
   if (
-    calculationType !== 'ADD' &&
-    calculationType !== 'SUBTRACT' &&
-    calculationType !== 'MULTIPLY' &&
-    'DIVIDE'
+    (calculationType !== 'ADD' &&
+      calculationType !== 'SUBTRACT' &&
+      calculationType !== 'MULTIPLY' &&
+      'DIVIDE') ||
+    !enteredNumber
   ) {
     console.log('Incorrect value to calculationType');
     return; // stops code here
   }
 
-  const enteredNumber = getUserInput();
   const initialResult = currentResult;
   let mathOperator;
   console.log(enteredNumber, currentResult); // using console.log() to analyze our inputs code
